@@ -4,14 +4,14 @@ defmodule Nifty.Mixfile do
   def project do
     [app: :nifty,
      version: "0.0.3",
-     description: description,
+     description: description(),
      elixir: "~> 1.0",
      name: "Nifty",
      source_url: "https://github.com/rossjones/nifty",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     package: package,
-     deps: deps]
+     package: package(),
+     deps: deps()]
   end
 
   defp package do
